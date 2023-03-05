@@ -7,7 +7,7 @@ type Props = {
 
 function Animation({children}:Props) {
   const animationRef = useRef<HTMLInputElement>(null);
-  const animatedEntry = useObserver(animationRef, {threshold: 0.75})
+  const animatedEntry = useObserver(animationRef, {threshold: 0})
   const [isVisible, setIsVisible] = useState(false);
 
 
