@@ -1,7 +1,7 @@
 import Project from "../Project/Project";
 import { ProjectProps } from "../../utils/interfaces";
 
-const test:ProjectProps = {
+const myProjects:ProjectProps = {
   tags: ["REACTJS", "HTML", "CSS", "TYPESCRIPT", "CLEAN CODE"],
   card: {
     imgUrl: "/assets/images/portifolio-light.PNG",
@@ -12,7 +12,7 @@ const test:ProjectProps = {
   links: [
     {
       isGit: true,
-      link: "https://github.com/EnzoTT/portifolio-reactjs",
+      link: "https://github.com/EnzoTT/my-portiolio",
     },
   ],
 };
@@ -22,7 +22,7 @@ function Projects() {
     <section id="projects" className="container">
       <h2 className="code">{"<Projetos>"}</h2>
       <div className="wrapper-inner">
-          <Project tags={test.tags} card={test.card} links={test.links}/>
+          <Project tags={myProjects.tags} card={myProjects.card} links={myProjects.links}/>
       </div>
       <h2 className="code">{"</Projetos>"}</h2>
     </section>

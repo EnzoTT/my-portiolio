@@ -21,9 +21,9 @@ function Menu() {
         <a href="#about" className="menu-link  primary-color">
           //Sobre mim
         </a>
-        <a href="#contact" className="menu-link  primary-color">
+        {/* <a href="#contact" className="menu-link  primary-color">
           //Contato
-        </a>
+        </a> */}
       </div>
       <div className="section-menu mobile">
         <button className="menu-link primary-color" onClick={handleMenu}>
@@ -46,9 +46,9 @@ function Menu() {
             <a href="#about" className="menu-link" onClick={handleMenu}>
               //Sobre mim
             </a>
-            <a href="#contact" className="menu-link" onClick={handleMenu}>
+            {/* <a href="#contact" className="menu-link" onClick={handleMenu}>
               //Contato
-            </a>
+            </a> */}
             <ThemeButton />
           </div>
         </div>
