@@ -1,0 +1,68 @@
+.card {
+  width: 100%;
+  max-width: 1300px;
+  height: 600px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  color: white;
+}
+
+.card .overlay {
+  background-color: var(--dark-background-opacity);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+  background-color: var(--dark-background-opacity);
+  position: relative;
+}
+
+.card .overlay .text {
+  text-align: left;
+  width: 100%;
+  transition: all 0.5s;
+  padding: 2rem;
+}
+
+.card .overlay .text {
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+.card:hover .overlay .text {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.bg-animation {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  transition: all 2s;
+  z-index: 0;
+  position: absolute;
+  top: 0px;
+}
+
+.card:hover .bg-animation {
+  transform: scale(1.1);
+  background-color: var(--dark-background-opacity);
+}
+
+@media screen and (max-width: 936px) {
+  .card .overlay .text {
+    text-align: center;
+    width: 100%;
+    transition: all 0.5s;
+    padding: 2rem;
+  }
+}

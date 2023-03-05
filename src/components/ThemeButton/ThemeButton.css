@@ -1,0 +1,75 @@
+.dark .theme-button{
+    color: white;
+    background-color: var(--dark-background);
+    border: 1px solid white;
+}
+
+.dark .theme-button:hover{
+    color:  var(--dark-background);
+    background-color: white;
+    border: 1px solid  var(--dark-background);
+}
+
+
+.theme-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  var(--dark-background);
+    background-color: white;
+    border: 1px solid  var(--dark-background);
+
+    transition: all 0.3s;
+
+    max-height: 2.3rem;
+    width: 134px;
+
+    padding: 0.3rem 1rem;
+}
+
+.theme-button:hover{
+    color: white;
+    background-color: var(--dark-background);
+    border: 1px solid white;
+}
+
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    appearance: none;
+    visibility: hidden;
+    display: none;
+}
+
+.check{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 25px;
+    background-color:var(--primary-color);
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in 0.5s;
+}
+
+input[type="checkbox"]:checked ~ .check{
+    background-color: var(--primary-color);
+}
+
+.check::before{
+    content:'';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background-color: #fff;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    transition: ease-in 0.3s;
+}
+
+input[type="checkbox"]:checked ~ .check::before{
+    transform: translateX(25px);
+    background-color: var(--dark-background);
+
+}

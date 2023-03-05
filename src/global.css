@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Fira Code', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+header{
+  display: inline-block;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+
+  background: var(--dark-background);
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+:root {
+  --primary-color:#3a3cbb;
+  --dark-background: #06060e;
+  --dark-background-opacity: rgba(6, 6, 14, 0.9);
+  --white-opacity: rgba(255,255,255,.9);
+
+  --dark-color: #0C0C1D;
+  --gray: #808080;
+}
+
+.container{
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 81px;
+  height: max-content;
+}
+
+.code{
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  /* animation: fadeInOutAnimation 1.5s;s */
+  /* width: 70%; */
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+.comments{
+  color: var(--gray);
+  margin-top: 1rem;
+
+}
+
+p{
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.75;
+  word-spacing: auto;
+}
+
+.wrapper-inner{
+  padding: 50px 0 50px 50px;
+}
+
+h3{
+  font-size: 2.1rem;
+  font-weight: bolder;
+  margin-top: 7rem;
+  margin-bottom: 1rem;
+
+}
+
+h5{
+  font-size: 1.5rem;
+  font-weight: bolder;
+
+}
+
+h6{
+  font-size: 1.3rem;
+  font-weight: bolder;
+  margin-bottom: 1.5rem;
+}
+
+.primary-color{
+  color:var(--primary-color)
+}
+
+
+.mobile{
+  display: none;
+}
+
+.desktop{
+  display: flex;
+}
+
+@media screen and (max-width:936px) {
+  .wrapper-inner{
+    padding: 10px;
+  }
+
+  .container{
+    padding: 20px;
+  }
+
+  .mobile{
+    display: flex;
+  }
+
+  .desktop{
+    display: none;
+  }
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  margin-top: 5rem;
+}
+
+footer span{
+  font-weight: 800;
+}
+
+.primary-button{
+  color: white;
+  background-color: var(--primary-color);
+  padding: 10px 30px;
+  font-size: 1.4rem;
+  transition: all 0.2s;
+}
+
+.primary-button:hover{
+opacity: 0.7;
+}
+
+.animation {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 1s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}

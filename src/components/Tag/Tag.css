@@ -1,0 +1,19 @@
+.tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-height: 2.3rem;
+    width: 134px;
+
+    padding: 0.3rem 1rem;
+    color: white;
+    background-color: var(--dark-background);
+    border: 1px solid white;
+}
+
+.dark .tag{
+    color:  var(--dark-background);
+    background-color: white;
+    border: 1px solid  var(--dark-background);
+}

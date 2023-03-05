@@ -1,0 +1,32 @@
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 10px 50px;
+    height: 81px;
+    z-index: 2;
+
+    top: 0;
+}
+
+nav a{
+    padding: 0 10px;
+}
+
+.social{
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+
+}
+.social a{
+    padding: 10px;
+
+}
+
+.social a:hover{
+    transform: translateY(-5px);
+    transition: 0.2s;
+}

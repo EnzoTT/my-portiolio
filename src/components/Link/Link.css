@@ -1,0 +1,16 @@
+.link{
+    color: var(--dark-background);
+    font-weight: 800;
+    font-size: large;
+    cursor: pointer;
+}
+
+.link:hover,
+.dark .link:hover
+{
+ color: var(--primary-color);
+}
+
+.dark .link{
+    color: white;
+}

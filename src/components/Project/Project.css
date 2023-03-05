@@ -1,0 +1,19 @@
+.tag-container{
+    width: 100%;
+    padding: 1rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.link-container{
+    width: 100%;
+    padding: 1rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.project{
+    margin-bottom: 70px;
+}
